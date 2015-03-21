@@ -17,7 +17,7 @@ $(document).ready
 		checkmusic();
 
 		var player=$("main audio#player");
-		var status=$("main output#status");
+		var status=$("footer output#status");
 
 		setInterval
 		(

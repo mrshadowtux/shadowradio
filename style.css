@@ -171,13 +171,57 @@ main section#senderliste article output.song:before
 	vertical-align: middle;
 }
 
-main output#status
+body > footer
 {
 	position: fixed;
 	bottom: 0px;
 	display: block;
 	width: 100%;
-	text-align: center;
 	margin-bottom: 1em;
-	background-color: #ffffff;
+}
+
+body > footer output#status
+{
+	display: block;
+	float: left;
+	clear: left;
+	margin-left: 2em;
+}
+
+body > footer output#status:before
+{
+	font-family: "FontAwesome";
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\f130";
+	margin-right: 0.5em;
+}
+
+body > footer aside#github
+{
+	display: block;
+	float: right;
+	clear: right;
+	margin-right: 2em;
+}
+
+body > footer aside#github:before
+{
+	font-family: "FontAwesome";
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\f09b";
+}
+
+a
+{
+	text-decoration: none;
+	color: #0000ff;
+}
+
+a:hover
+{
+	text-decoration: underline;
 }
