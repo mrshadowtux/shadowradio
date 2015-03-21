@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+	<title>Radiosender</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Radioplayer</h1>
+	</header>
+	<main>
+		<section id="senderliste">
+			<article data-title="1Live" data-streamlink="http://1live.akacast.akamaistream.net/7/706/119434/v1/gnl.akacast.akamaistream.net/1live">
+				<figure class="logo">
+					<img src="logos/1live.svg" alt="Senderlogo von 1live">
+				</figure>
+				<ul class="actions">
+					<li><button class="listen_here">Browser</button></li>
+					<li><button class="listen_server">Server</button></li>
+				</ul>
+				<output class="song">Wird geladen..</output>
+			</article>
+
+			<article data-title="WDR2" data-streamlink="http://wdr-mp3-m-wdr2-koeln.akacast.akamaistream.net/7/812/119456/v1/gnl.akacast.akamaistream.net/wdr-mp3-m-wdr2-koeln">
+				<figure class="logo">
+					<img src="logos/wdr2.svg" alt="Senderlogo von WDR2">
+				</figure>
+				<ul class="actions">
+					<li><button class="listen_here">Browser</button></li>
+					<li><button class="listen_server">Server</button></li>
+				</ul>
+				<output class="song">Wird geladen..</output>
+			</article>
+
+			<article data-title="NDR2" data-streamlink="http://ndr-ndr2-nds-mp3.akacast.akamaistream.net/7/400/252763/v1/gnl.akacast.akamaistream.net/ndr_ndr2_nds_mp3">
+				<figure class="logo">
+					<img src="logos/ndr2.svg" alt="Senderlogo von NDR2">
+				</figure>
+				<ul class="actions">
+					<li><button class="listen_here">Browser</button></li>
+					<li><button class="listen_server">Server</button></li>
+				</ul>
+				<output class="song">Wird geladen..</output>
+			</article>
+		</section>
+
+		<audio id="player"></audio>
+		<output id="status"></output>
+	</main>
+	<script src="https://static.farnox.de/jquery-1.9.1.min.js"></script>
+	<script src="radioplayer.js"></script>
+</body>
+</html>
