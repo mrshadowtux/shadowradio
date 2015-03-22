@@ -37,7 +37,6 @@ $(document).ready
 				player.trigger("stop");
 				player.attr("src",streamlink);
 				player.trigger("play");
-				status.addClass("active");
 				status.html("Spiele den Sender "+sender.data("title"));
 			}
 		);
