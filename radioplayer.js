@@ -8,7 +8,7 @@ $(document).ready
 			(
 				function()
 				{
-					var songurl="http://shadowtux.info/radio/whatsplaying.php?sender="+$(this).data("title");
+					var songurl="http://shadowtux.info/radio/whatsplaying.php?sender="+$(this).data("title")+"&timestamp="+Math.floor(Date.now()/1000); // timestamp um cachen zu verhindern
 					$(this).find("output.song").load(songurl);
 				}
 			);
