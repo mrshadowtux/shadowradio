@@ -25,7 +25,7 @@ $(document).ready
 			{
 				checkmusic();
 			}
-		,5000);
+		,15000);
 
 
 		$("main section#senderliste article ul.actions li button.listen_here").click
