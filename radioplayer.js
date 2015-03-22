@@ -34,10 +34,17 @@ $(document).ready
 			{
 				var sender=$(this).parent().parent().parent();
 				var streamlink=sender.data("streamlink");
-				player.trigger("stop");
-				player.attr("src",streamlink);
-				player.trigger("play");
-				status.html("Spiele den Sender "+sender.data("title"));
+				if(player.attr("src")==streamlink)
+				{
+					alert("Der Sender läuft doch schon! Den lade ich nicht erneut.");
+				}
+				else
+				{
+					player.trigger("stop");
+					player.attr("src",streamlink);
+					player.trigger("play");
+					status.html("Spiele den Sender "+sender.data("title"));
+				}
 			}
 		);
 		$("main section#senderliste article ul.actions li button.listen_server").click
